@@ -9,7 +9,7 @@ import crud
 import model
 import server
 
-os.system("dropdb ratings")
+os.system("dropdb --if-exists ratings")
 os.system("createdb ratings")
 
 model.connect_to_db(server.app)
